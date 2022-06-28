@@ -17,7 +17,6 @@ function run() {
         echo "[{ \"type\": \"Info Tool Note Without Line Number\", \
                 \"message\": \"Lift is analyzing commit $commit\", \
                 \"file\": \"file.txt\", \
-                \"category\": \"bug\", \
                 \"details_url\": \"https://example.com/#example\" \
             }]"
     else
