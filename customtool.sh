@@ -14,9 +14,9 @@ function applicable() {
 function run() {
     BRANCH=$(git rev-parse --abbrev-ref HEAD)
     if [[ "$BRANCH" == "patch4" ]] ; then
-        echo "[{ \"type\": \"Info Tool Note Without Line Number\", \
-                \"message\": \"Lift is analyzing commit $commit\", \
-                \"file\": \"file.txt\", \
+        echo "[{ \"type\": \"Info Tool Note Without Line Number on branch: $BRANCH\", \
+                \"message\": \"$BRANCH\", \
+                \"file\": \"$BRANCH\", \
                 \"details_url\": \"https://example.com/#example\" \
             }]"
     else
