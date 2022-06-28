@@ -17,7 +17,6 @@ function run() {
         echo "[{ \"type\": \"Info Tool Note Without Line Number on branch: $BRANCH\", \
                 \"message\": \"$BRANCH\", \
                 \"file\": \"$BRANCH\", \
-                \"category\": \"bug\", \
                 \"details_url\": \"https://example.com/#example\" \
             }]"
     else
