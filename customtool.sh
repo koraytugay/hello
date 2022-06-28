@@ -13,7 +13,7 @@ function applicable() {
 
 function run() {
     BRANCH=$(git rev-parse --abbrev-ref HEAD)
-    if [[ "$BRANCH" != "main" ]] ; then
+    if [[ "$BRANCH" == "patch4" ]] ; then
         echo "[{ \"type\": \"Info Tool Note Without Line Number\", \
                 \"message\": \"Lift is analyzing commit $commit\", \
                 \"file\": \"file.txt\", \
